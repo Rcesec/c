@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('1.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            width: 80%;
+            margin: 10px;
+        }
+
+        .block:hover {
+            transform: scale(1.1);
+        }
+
+        .block img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: none !important;
+            outline: none;
+        }
+
+        .text-container {
+            margin-top: 15px;
+        }
+
+        h2 {
+            /* Add glow effect to h2 text */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            /* Make h2 text slightly smaller */
+            font-size: 1.2em;
+        }
+
+        .block a,
+        .coming-soon {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .block a:hover,
+        .coming-soon:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .coming-soon {
+            font-style: italic;
+        }
+
+        @media (min-width: 600px) {
+
+            .block {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Block 1 -->
+        <div class="block">
+            <img src='C:\Users\vivek\OneDrive\Desktop\y\2.jpg' alt="Course 1">
+            <div class="text-container">
+                <!-- Add glow effect to h2 text -->
+                <h2 style="text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Ethical Hacking Kickstart: Beginner's Edition (Hindi)</h2>
+                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">Register Now</a>
+            </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="block">
+
+            <img src='3.png' alt="Course 2">
+            <div class="text-container">
+                <!-- Add glow effect to h2 text -->
+                <h2 style="text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Js for Bug hunters (Hindi)</h2>
+                <p class="coming-soon">Coming Soon</p>
+
+            </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="block">
+            <img src='4.jpg' alt="Course 3"> <!-- Use a relative path to the image -->
+            <div class="text-container">
+                <!-- Add glow effect to h2 text -->
+                <h2 style="text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Bug Bounty for Beginners (Hindi)</h2>
+                <p class="coming-soon">Coming Soon</p>
+            </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div class="block">
+
+
+            <img src='5.jpg' alt="Course 4"> <!-- Use a relative path to the image -->
+            <div class="text-container">
+                <!-- Add glow effect to h2 text -->
+                <h2 style="text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Live Advanced Bug Bounty: Automation / Manual Edition Poc + Notes (Hindi)</h2>
+                <p class="coming-soon">Coming Soon</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
